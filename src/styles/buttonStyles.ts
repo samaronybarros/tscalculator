@@ -1,4 +1,5 @@
 import { StyleSheet, Dimensions } from 'react-native'
+import color from './colors'
 
 export const styles = StyleSheet.create({
 	button: {
@@ -6,14 +7,15 @@ export const styles = StyleSheet.create({
 		width: Dimensions.get('window').width / 4,
 		height: Dimensions.get('window').width / 4,
 		padding: 20,
-		backgroundColor: '#f0f0f0',
+		color: color.buttonColor,
+		backgroundColor: color.buttonBackgroundColor,
 		textAlign: 'center',
 		borderWidth: 1,
-		borderColor: '#888'
+		borderColor: color.buttonBorderColor
 	},
 	operationButton: {
 		color: '#FFF',
-		backgroundColor: '#fa8231'
+		backgroundColor: color.buttonOperationBackgroundColor
 	},
 	buttonDouble: {
 		width: Dimensions.get('window').width / 4 * 2
